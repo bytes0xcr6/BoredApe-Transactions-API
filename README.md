@@ -21,7 +21,7 @@ git clone https://github.com/CristianRicharte6/BoredApe-Transactions-API
 npm i
 ```
 
-- 3rd access to the cloned folder
+- 3rd Access to the cloned folder
 
 ```
 cd .\BoredApe-Transactions-API\
