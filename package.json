@@ -1,0 +1,16 @@
+{
+  "name": "etherscan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristian",
+  "license": "ISC",
+  "dependencies": {
+    "@moralisweb3/evm-utils": "^2.14.3",
+    "dotenv": "^16.0.3",
+    "ethers": "5.4"
+  }
+}
