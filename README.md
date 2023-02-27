@@ -1,4 +1,4 @@
-# BoredApe Transactions API
+# BoredApe Sales Transactions API
 
 This script will return a list of the last sales for the Bored Ape NFT collection in the last 1.000 blocks. Including new transactions & internal transactions.
 
