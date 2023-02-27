@@ -27,7 +27,12 @@ npm i
 cd .\BoredApe-Transactions-API\
 ```
 
-- 4th Run the App.js with Node.js
+- 4rd Create a dot.env file to store your INFURA_API_KEY
+```
+INFURA_API_KEY=<API KEY>
+```
+
+- 5th Run the App.js with Node.js
 
 ```
 node app.js
