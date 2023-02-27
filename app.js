@@ -39,17 +39,7 @@ async function main() {
     );
 
     if (value > 0 && details !== "undefined") {
-      // If there is value, print it
-      if (
-        transferEvents[i - 1].transactionIndex ===
-        transferEvents[i].transactionIndex
-      ) {
-        console.log(`\n**** Internal transaction ****`);
-      } else {
-        console.log(`\n*New transaction*`);
-      }
-
-      console.log(`🐒 NFT ID: ${details.tokenId}`);
+      console.log(`\n🐒 NFT ID: ${details.tokenId}`);
       console.log(`📤 From: ${details.from}`);
       console.log(`📥 To: ${details.to}`);
       console.log(`💰 Value: ${ethers.utils.formatEther(value)} Ethers`);
@@ -57,6 +47,16 @@ async function main() {
         `📧 Transaction Index: ${transferEvents[i].transactionIndex}`
       );
       console.log(`🔒 Transaction Hash: ${transferEvents[i].transactionHash}`);
+
+      // If there is value, print it
+      if (
+        transferEvents[i - 1].transactionIndex ===
+        transferEvents[i].transactionIndex
+      ) {
+        console.log(`**** Internal transaction ****`);
+      } else {
+        console.log(`*New transaction*`);
+      }
     }
   }
   console.log(`\n*** ${rangeOfBlocks} last blocks read successfully ***`);
